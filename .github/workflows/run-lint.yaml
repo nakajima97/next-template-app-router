@@ -1,11 +1,11 @@
 on: [pull_request, push]
 
 jobs:
-  run-formatter-management-app:
+  run-formatter:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./management-app
+        working-directory: ./
     steps:
       - name: checkout
         uses: actions/checkout@v4
