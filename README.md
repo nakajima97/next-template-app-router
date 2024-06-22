@@ -1,3 +1,15 @@
+# setup
+`yarn`
+
+# test
+`yarn test`
+
+# lint
+`yarn lint`
+
+# formatter
+`yarn prettier`
+
 # install option
 ✔ What is your project named? … next-template
 ✔ Would you like to use ESLint? … Yes
