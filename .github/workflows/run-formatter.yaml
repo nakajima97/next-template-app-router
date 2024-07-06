@@ -1,7 +1,7 @@
 on: [pull_request]
 
 jobs:
-  run-formatter-management-app:
+  run-formatter:
     runs-on: ubuntu-latest
     defaults:
       run:
