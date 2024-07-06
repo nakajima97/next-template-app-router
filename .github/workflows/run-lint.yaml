@@ -1,7 +1,7 @@
 on: [pull_request]
 
 jobs:
-  run-formatter:
+  run-lint:
     runs-on: ubuntu-latest
     defaults:
       run:
