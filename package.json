@@ -6,12 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prettier": "prettier --write .",
-    "bc": "biome check --write <files>"
+    "bc": "biome check --write .",
+    "format": "biome format .",
+    "lint": "biome lint ."
   },
   "dependencies": {
     "@testing-library/dom": "^10.3.1",
