@@ -10,7 +10,8 @@
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "bc": "biome check --write <files>"
   },
   "dependencies": {
     "@testing-library/dom": "^10.3.1",
@@ -21,6 +22,7 @@
     "webpack": "^5.92.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@chromatic-com/storybook": "^1.5.0",
     "@storybook/addon-essentials": "^8.1.10",
     "@storybook/addon-interactions": "^8.1.10",
