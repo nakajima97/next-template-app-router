@@ -9,6 +9,18 @@
 			"recommended": true
 		}
 	},
+	"files": {
+		"ignore": [
+			"node_modules/*",
+			"dist",
+			"build",
+			"coverage",
+			"*.log",
+			".next/*",
+			"package.json",
+			"tsconfig.json"
+		]
+	},
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single"
