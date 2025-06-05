@@ -19,4 +19,4 @@ jobs:
         run: yarn install
 
       - name: Run Lint
-        run: yarn test --passWithNoTests
+        run: yarn test
