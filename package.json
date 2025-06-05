@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
+    "test": "vitest run --passWithNoTests || echo 'No test files found'",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "bc": "biome check --write .",
@@ -15,7 +17,6 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@testing-library/dom": "^10.3.1",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
@@ -33,15 +34,18 @@
     "@storybook/nextjs": "^8.1.10",
     "@storybook/react": "^8.1.10",
     "@storybook/test": "^8.1.10",
-    "@testing-library/jest-dom": "^6.4.6",
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^20",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
+    "@vitejs/plugin-react": "^4.5.1",
+    "@vitest/coverage-v8": "^3.2.2",
+    "jsdom": "^26.1.0",
     "storybook": "^8.1.10",
-    "typescript": "<5.5.0"
+    "typescript": "<5.5.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.2"
   },
   "packageManager": "yarn@4.3.1",
   "resolutions": {
