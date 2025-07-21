@@ -81,3 +81,7 @@ src/
 - Biomeが自動的にimportを整理
 - Vitestでjsdom環境でのテスト実行
 - StorybookでコンポーネントのUI開発・テスト
+
+## GitHub操作
+- GitHub関連の操作（PR作成、Issue管理等）は`gh`コマンドではなくMCPツールを使用する
+- 例：`mcp__github-server__create_pull_request`、`mcp__github-server__list_issues`等
