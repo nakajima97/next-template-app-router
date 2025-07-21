@@ -6,41 +6,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 開発サーバー
 ```bash
-yarn dev  # Next.js開発サーバーをTurbopackで起動
+pnpm dev  # Next.js開発サーバーをTurbopackで起動
 ```
 
 ### ビルドと本番
 ```bash
-yarn build  # プロダクションビルド
-yarn start  # プロダクションサーバー起動
+pnpm build  # プロダクションビルド
+pnpm start  # プロダクションサーバー起動
 ```
 
 ### テスト
 ```bash
-yarn test           # Vitestでテスト実行（テストファイルがない場合はパス）
-yarn test:watch     # Vitestをwatchモードで実行
-yarn test:coverage  # カバレッジ付きでテスト実行
-yarn type-check     # TypeScript型チェック
+pnpm test           # Vitestでテスト実行（テストファイルがない場合はパス）
+pnpm test:watch     # Vitestをwatchモードで実行
+pnpm test:coverage  # カバレッジ付きでテスト実行
+pnpm type-check     # TypeScript型チェック
 ```
 
 ### コード品質
 ```bash
-yarn bc        # Biomeでチェック＆自動修正
-yarn format    # Biomeでフォーマット
-yarn lint      # Biomeでリント
+pnpm bc        # Biomeでチェック＆自動修正
+pnpm format    # Biomeでフォーマット
+pnpm lint      # Biomeでリント
 ```
 
 ### Storybook
 ```bash
-yarn storybook        # Storybookサーバー起動（ポート6006）
-yarn build-storybook  # Storybookビルド
+pnpm storybook        # Storybookサーバー起動（ポート6006）
+pnpm build-storybook  # Storybookビルド
 ```
 
 ## アーキテクチャ
 
 ### プロジェクト構成
 - **Next.js 15** + **App Router** を使用
-- **Yarn 4.3.1** でパッケージ管理
+- **pnpm** でパッケージ管理
 - **Biome** でlinting/formatting（ESLintの代替）
 - **Vitest** + **jsdom** でテスト実行
 - **Storybook** でコンポーネント開発
@@ -73,7 +73,7 @@ src/
 - コンポーネントをPresentational/Containerパターンで分離
 - 機能ごとに`features/`ディレクトリで分割して関心の分離
 - `@/*` エイリアスで`src/`ディレクトリからのインポート
-- React 19を使用（resolutionsで固定）
+- React 19を使用（pnpm.overridesで固定）
 - Biomeのフォーマット設定：スペース2つインデント、シングルクォート
 
 ### 重要な設定
