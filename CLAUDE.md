@@ -20,7 +20,7 @@ pnpm start  # プロダクションサーバー起動
 pnpm test           # Vitestでテスト実行（テストファイルがない場合はパス）
 pnpm test:watch     # Vitestをwatchモードで実行
 pnpm test:coverage  # カバレッジ付きでテスト実行
-pnpm type-check     # TypeScript型チェック
+pnpm tc     # TypeScript型チェック
 ```
 
 ### コード品質
