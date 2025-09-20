@@ -17,12 +17,12 @@ https://github.com/nakajima97/next-template-page-router
 ## セットアップ
 
 1. リポジトリをクローンします。
-2. 依存関係をインストールします: `yarn install`
-3. プロジェクトを起動します: `yarn dev`
+2. 依存関係をインストールします: `pnpm install`
+3. プロジェクトを起動します: `pnpm dev`
 
 ## テスト
 
-`yarn test` を実行してテストを実行します。
+`pnpm test` を実行してテストを実行します。
 
 ## インストールオプション
 NextJSインストール時のオプションは以下を選択しています。
