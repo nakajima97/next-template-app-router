@@ -11,7 +11,7 @@ https://github.com/nakajima97/next-template-page-router
 
 * Next.js
 * React
-* Yarn
+* pnpm
 * Biome
 
 ## セットアップ
