@@ -1,0 +1,30 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "src/app/**/**/page.tsx",
+    "src/app/**/**/layout.tsx"
+  ],
+  "project": [
+    "src/**/*.{ts,tsx}",
+    "!src/**/*.test.{ts,tsx}",
+    "!src/**/*.stories.{ts,tsx}"
+  ],
+  "ignore": [
+    "src/test/setup.ts",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "**/shadcn/ui/*.tsx"
+  ],
+  "ignoreDependencies": ["ts-node"],
+  "next": {
+    "entry": ["src/app/**/**/page.tsx", "src/app/**/**/layout.tsx"]
+  },
+  "vitest": {
+    "config": ["vitest.config.js"],
+    "entry": ["src/**/*.test.{ts,tsx}"]
+  },
+  "storybook": {
+    "config": [".storybook/main.ts"],
+    "entry": ["src/**/*.stories.{ts,tsx}", ".storybook/preview.ts"]
+  }
+}
